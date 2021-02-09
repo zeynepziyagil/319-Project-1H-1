@@ -8,7 +8,7 @@ General:
 -Profile -- include peer review 
 -Calender
 -Current grade calculations (average calculations)
-
+-search for student or needed attributes of tudents in group formation
 For Instructor:
 -Assing homeworks(Due Date-close assignment) / feedback
 -Quizzes
