@@ -9,6 +9,9 @@ General:
 -Calender
 -Current grade calculations (average calculations)
 -search for student or needed attributes of tudents in group formation
+-Instructor's timetables for students to make a reservation
+
+
 For Instructor:
 -Assing homeworks(Due Date-close assignment) / feedback
 -Quizzes
