@@ -4,7 +4,7 @@ General Description: In this project, we will create web-based application that 
 Features of the Application:
 
 General:
--Message
+-Message\
 -Announcements 
 -Ever course has unique page
 -Profile 
