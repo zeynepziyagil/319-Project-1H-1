@@ -36,7 +36,7 @@ For Students:\
 *Announcements for each group\
 *Private message between group members\  
 
-For TAs:
+For TAs:\
 -Grading for each assignment\
 -Assign labs and hws and give feedbacks\
 -Group management for adding and removing students for each group\
