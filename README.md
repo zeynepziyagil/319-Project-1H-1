@@ -1,8 +1,9 @@
 # 319-Project
-CS319-OOP Project
+CS319-OOP Project ##Heading2##
 General Description: In this project, we will create web-based application that enables students, instructors and teaching assistans interact with each other. It organizes student activities,assignments and helps students to form groups for their projects.
 Features of the Application:\
 General:\
+-Dashboard\
 -Message\
 -Announcements\ 
 -Every course has unique page\
