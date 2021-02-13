@@ -1,18 +1,18 @@
 # 319-Project
-CS319-OOP Project ##Heading2##
+##CS319-OOP Project##
 General Description: In this project, we will create web-based application that enables students, instructors and teaching assistans interact with each other. It organizes student activities,assignments and helps students to form groups for their projects.
 Features of the Application:\
 General:\
--Dashboard\
--Message\
--Announcements\ 
--Every course has unique page\
--Profiles\
--Calender in which the user can see his/her due dates for upcoming assignments and quizzes\
--Current grade calculations (average calculations)\
--Search for student or needed attributes of students in group formation\
--Instructor's timetables for students to make a reservation (like office hours but appointment)\
--Course Pages\
+* Dashboard\
+* Message\
+* Announcements\ 
+* Every course has unique page\
+* Profiles\
+* Calender in which the user can see his/her due dates for upcoming assignments and quizzes\
+* Current grade calculations (average calculations)\
+* Search for student or needed attributes of students in group formation\
+* Instructor's timetables for students to make a reservation (like office hours but appointment)\
+* Course Pages\
 
 For Instructors:\
 -Can create course pages\
