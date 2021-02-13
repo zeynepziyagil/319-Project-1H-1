@@ -1,7 +1,7 @@
 # 319-Project
-#### General Description: ####
+### General Description: ###
 In this project, we will create web-based application that enables students, instructors and teaching assistans interact with each other. It organizes student activities,assignments and helps students to form groups for their projects.
-### Features of the Application:\
+### Features of the Application:
 #### General:
 * Dashboard
 * Message
