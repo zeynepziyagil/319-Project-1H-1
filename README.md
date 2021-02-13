@@ -29,6 +29,7 @@ In this project, we will create web-based application that enables students, ins
 #### For Students:
 * Can enroll course pages
 * Their profiles will include peer review rates and comments
+* Default review questions 
 * Upload homeworks
 * Due date reminder that will send e-mail to each student
 * General message platform for each section without instructors
