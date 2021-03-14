@@ -38,6 +38,7 @@ In this project, we will create web-based application that enables students, ins
 * General message platform for each section without instructors
 * Group formation request to instructor 
 * All of them are admin in their group(can add and remove members till the deadline)
+* Assistant reviews
 
 #### For Groups:
 * Deadline request for extension
