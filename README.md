@@ -17,7 +17,8 @@ In this project, we will create web-based application that enables students, ins
 #### For Instructors:
 * Can create course pages
 * Assing artifacts(Due Date-close assignment)
-* Give feedback
+* Give feedback 
+* Grading assignments
 * Lecture Notes(general group page)
 * Example project artifacts
 * Course Description-syllabus
