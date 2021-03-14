@@ -35,7 +35,7 @@ In this project, we will create web-based application that enables students, ins
 * Can view other groups pages(not grades onyl artifacts and comments)
 * Their profiles will include peer review rates and comments
 * Default review questions 
-* Due date reminder that will send e-mail to each student
+* Due date reminder that will show notification
 * General message platform for each section without instructors
 * Group formation request to instructor 
 * All of them are admin in their group(can add and remove members till the deadline)
