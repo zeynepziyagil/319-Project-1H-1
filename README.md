@@ -1,59 +1,70 @@
-# 319-Project
-### General Description: ###
-In this project, we will create web-based application that enables students, instructors and teaching assistans interact with each other. It organizes student activities,assignments and helps students to form groups for their projects.
-### Features of the Application:
-#### General:
-* Dashboard- for group page and general course page
-* Message - general(forum), group, private
-* Announcements - general course page, group pages 
-* Profiles - TA, student, instructor, group (includes statistics, grades and rates)
-* Calender in which the user can see his/her due dates for upcoming assignments (artifact)
-* Current grade calculations (average calculations)
-* Search for student or needed attributes of students in group formation
-* Instructor's timetables for students/group to make a reservation (like office hours but appointment)
-* Course Pages
-* Random member adding when the number of the member in a group is less than min person constant
+# Getting Started with Create React App
 
-#### For Instructors:
-* Can create course pages
-* Assing artifacts(Due Date-close assignment)
-* Give feedback 
-* Grading assignments
-* Lecture Notes(general group page)
-* Example project artifacts
-* Course Description-syllabus
-* Can create polls 
-* Reports for assignments after due dates of homeworks for example how many groups do the given assignment in time
-* Can see statistics(ranking groups -> reviweing rates, grading)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Peer review:
-* In group individually(anonym inside group, but instructor can see it)(blind review)
-* Peer Artifact Review(feedbacks are not anonym, grades are anonym but instructor can see it)
+## Available Scripts
 
-#### For Students:
-* Can enroll course pages
-* Can view other groups pages(not grades onyl artifacts and comments)
-* Their profiles will include peer review rates and comments
-* Default review questions 
-* Due date reminder that will show notification
-* General message platform for each section without instructors
-* Group formation request to instructor 
-* All of them are admin in their group(can add and remove members till the deadline)
-* Assistant reviews
+In the project directory, you can run:
 
-#### For Groups:
-* Deadline request for extension
-* Notice for students for searching groups. For example, when a group needs one more person with specific requirements, they give ads
-* Add member according to requests
-* Remove member 
-* Announcements for each group
-* Private message between group members
+### `npm start`
 
-#### For TAs:
-* Can enroll course pages
-* Grading for each assignment
-* Give feedbacks
-* Group formation according to requests (min person number in each group)
-* Cannot add individual to an existing group
-* Delete the group
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
