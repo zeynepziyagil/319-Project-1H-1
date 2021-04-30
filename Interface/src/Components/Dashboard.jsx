@@ -8,7 +8,7 @@ function Dashboard() {
     return (
         <div>
             <LogoUpper />
-            <Link to="CoursePageStudent"><CourseCircle/></Link>
+            <CourseCircle/>
             <Menu />
         </div>
     );
