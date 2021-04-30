@@ -5,6 +5,8 @@ import SignUpPageStudent from "./SignUpPageStudent";
 import SignUpPageInstructor from "./SignUpPageInstructor";
 import Dashboard from "./Dashboard";
 import CoursePageStudent from "./CoursePageStudent";
+import StudentProfile from "./StudentProfile";
+import MessagePage from "./MessagePage";
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
             <Route exact path="/SignUpInstructor" component={SignUpPageInstructor} />
             <Route exact path="/Dashboard" component={Dashboard} />
             <Route exact path="/CoursePageStudent" component={CoursePageStudent} />
+            <Route exact path="/StudentProfile" component={StudentProfile} />
+            <Route exact path="/MessagePage" component={MessagePage} />
         </div>
     );
 }
