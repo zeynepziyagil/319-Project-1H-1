@@ -8,7 +8,7 @@ import CoursePageStudent from "./CoursePageStudent";
 import StudentProfile from "./StudentProfile";
 import MessagePage from "./MessagePage";
 import GroupPage from "./GroupPage";
-
+import PeerreviewPage from "./PeerreviewPage"
 
 function App() {
     return (
@@ -21,6 +21,7 @@ function App() {
             <Route exact path="/StudentProfile" component={StudentProfile} />
             <Route exact path="/MessagePage" component={MessagePage} />
             <Route exact path="/GroupPage" component={GroupPage} />
+            <Route exact path="/PeerreviewPage" component={PeerreviewPage} />
         </div>
     );
 }
