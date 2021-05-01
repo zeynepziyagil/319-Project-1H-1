@@ -707,3 +707,62 @@ td {
     left: 1100px;
     top: 320px;
 }
+
+.uploaded-assignments {
+  border-radius: 25px;
+  position: relative;
+  top: 50px;
+  left: 100px;
+  background-color: #f1e7e7;
+  padding: 10px 20px;
+  height: 250px;
+  width: 300px;
+  text-align: left;
+  align-items: center;
+  box-shadow: 0 2px 5px rgb(49, 45, 45);
+  overflow-y: scroll;
+}
+
+.group-links {
+  padding-bottom: 12px;
+  font-size: 20px;
+}
+
+.assignment-stats {
+  border-radius: 25px;
+  position: relative;
+  top: 50px;
+  left: 125px;
+  background-color: #f1e7e7;
+  padding: 10px 20px;
+  height: 250px;
+  width: 500px;
+  text-align: left;
+  align-items: center;
+  box-shadow: 0 2px 5px rgb(49, 45, 45);
+  overflow-y: scroll;
+}
+
+.extension-requests {
+  border-radius: 25px;
+  position: relative;
+  top: 50px;
+  left: 150px;
+  background-color: #f1e7e7;
+  padding: 10px 20px;
+  height: 250px;
+  width: 300px;
+  text-align: left;
+  align-items: center;
+  box-shadow: 0 2px 5px rgb(49, 45, 45);
+  overflow-y: scroll;
+}
+
+.deadline-input {
+  text-align: center;
+  position: relative;
+  width: 50%;
+  left: 60px;
+  height: 40px;
+  border-radius: 20px;
+}
