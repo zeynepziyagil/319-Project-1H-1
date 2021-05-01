@@ -12,11 +12,11 @@ function CoursePageStudent() {
         <div>
             <h1 className="header">CS 319</h1>
             <LogoUpper />
-            <Menu />
             <Announcement />
             <Poll />
             <ProjectGroups />
             <Advertisement />
+            <Menu />
             <table className="table">
                 <tr><th className="table-headers">WEEK 1</th></tr>
                 <tr><AiTwotoneCheckCircle size="0.7em"/>&emsp;Assignment 1</tr>
