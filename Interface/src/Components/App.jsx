@@ -7,6 +7,7 @@ import Dashboard from "./Dashboard";
 import CoursePageStudent from "./CoursePageStudent";
 import StudentProfile from "./StudentProfile";
 import MessagePage from "./MessagePage";
+import GroupPage from "./GroupPage";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/CoursePageStudent" component={CoursePageStudent} />
             <Route exact path="/StudentProfile" component={StudentProfile} />
             <Route exact path="/MessagePage" component={MessagePage} />
+            <Route exact path="/GroupPage" component={GroupPage} />
         </div>
     );
 }

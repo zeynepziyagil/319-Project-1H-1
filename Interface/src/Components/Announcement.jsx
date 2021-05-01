@@ -7,7 +7,7 @@ function Announcement() {
                 <h2>Announcements</h2>
             </div>
             <div>
-                <p>Correction: HW2 is due tomorrow.</p>
+                <p>128 milyar dolar nerede?.</p>
                 <p>Request deadline extension is denied. I'm sorry.</p>
             </div>
         </div>
