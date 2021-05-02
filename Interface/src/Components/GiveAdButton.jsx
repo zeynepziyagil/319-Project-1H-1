@@ -4,16 +4,13 @@ import Boxy from "./Boxy";
 import Popup from "reactjs-popup";
 
 import {AiOutlinePlusCircle} from "react-icons/ai";
-import { connect } from 'react-redux'
 var whoseProfile = 2;
 
 function add(){
-  return(<div>
-                <label>AD Explanation</label><br></br>
-                <input type="text" id="exp"/><br></br>
-                
-                
-
+  return (
+    <div>
+      <label>AD Explanation</label><br></br>
+       <input type="text" id="exp"/><br></br>            
    </div>);
 }
 

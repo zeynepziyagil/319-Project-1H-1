@@ -10,30 +10,32 @@ var whoseProfile = 1;
 
 
 function addCourse(){
-  return(<div>
-                <label>CourseName</label><br></br>
-                <input type="text" id="CourseName"/><br></br>
-                <label>CourseCode</label><br></br>
-                <input type="text" id="CourseCode"/><br></br>
-                <label>CouseEnrollCode</label><br></br>
-                <input type="text" id="CouseEnrollCode"/><br></br>      
-
-   </div>);
+  return (
+    <div>
+      <label>CourseName</label><br></br>
+      <input type="text" id="CourseName"/><br></br>
+      <label>CourseCode</label><br></br>
+      <input type="text" id="CourseCode"/><br></br>
+      <label>CouseEnrollCode</label><br></br>
+      <input type="text" id="CouseEnrollCode"/><br></br>      
+   </div>
+   );
 }
 function enrollCourse(){
-  return(<div>
-  <label>CourseCode</label><br></br>
-  <input type="text" id="CourseCode"/><br></br>
-  <label>CouseEnrollCode</label><br></br>
-  <input type="text" id="CouseEnrollCode"/><br></br>      
-
-</div>);
+  return (
+    <div>
+      <label>CourseCode</label><br></br>
+      <input type="text" id="CourseCode"/><br></br>
+      <label>CouseEnrollCode</label><br></br>
+      <input type="text" id="CouseEnrollCode"/><br></br>      
+    </div>)
+    ;
 }
 
 const contentStyle = {
-    maxWidth: "600px",
-    width: "90%"
-  };
+  maxWidth: "600px",
+  width: "90%"
+};
   
   const AddSign = () => (
     <Popup
