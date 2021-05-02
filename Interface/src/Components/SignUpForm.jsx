@@ -1,7 +1,17 @@
+import userEvent from "@testing-library/user-event";
 import React from "react";
 import {Link} from "react-router-dom";
 
 function SignUpForm() {
+    const [info,setName] = React.useState({name: "", surname: "", email: "", department: "", grade: null, id: "", password: ""});
+
+    function handleChange(event) {
+        setName({ ...info, [event.target.id]: event.target.value });
+    }
+
+    function showMessage() {
+        alert(info.name + info.surname + info.name + info.department + info.email);
+    }
     return (
         <div className="signup">
             <h3 className="name">Sign Up</h3>
@@ -17,22 +27,22 @@ function SignUpForm() {
                     </table>
                 </center>
                 <label>Name</label><br></br>
-                <input type="text" id="name"/><br></br>
+                <input onChange={handleChange} type="text" id="name" value={info.name}/><br></br>
                 <label>Surname</label><br></br>
-                <input type="text" id="surname"/><br></br>
+                <input onChange={handleChange} type="text" id="surname" value={info.surname}/><br></br>
                 <label>Email</label><br></br>
-                <input type="text" id="email"/><br></br>
+                <input onChange={handleChange} type="text" id="email" value={info.email}/><br></br>
                 <label>Department</label><br></br>
-                <input type="text" id="department"/><br></br>
+                <input onChange={handleChange} type="text" id="department" value={info.department}/><br></br>
                 <label>Grade</label><br></br>
-                <input type="text" id="grade"/><br></br>
+                <input onChange={handleChange} type="text" id="grade" value={info.grade}/><br></br>
                 <label>Student ID</label><br></br>
-                <input type="text" id="id"/><br></br>
+                <input onChange={handleChange} type="text" id="id" value={info.id}/><br></br>
                 <label>Password</label><br></br>
-                <input type="password" id="password"/><br></br>
+                <input onChange={handleChange} type="password" id="password" value={info.password}/><br></br>
                 <label>Confirm Password</label><br></br>
                 <input type="password" id="confirmPassword"/><br></br>
-                <button type="button"><Link to="Dashboard">Sign Up</Link></button>
+                <button onClick={showMessage}type="button"><Link to="Dashboard">Sign Up</Link></button>
             </form>
         </div>
     );

@@ -25,7 +25,7 @@ var z = 0;
 var x =[];
 var elements =[];
 var coursename ="CS-319";
-var whoseProfile = 1;
+var whoseProfile = 0;
 function showElement(add)
 {if(z<weeknum){z++;}
 if(elements.weeknum != 0 && whoseProfile==1)

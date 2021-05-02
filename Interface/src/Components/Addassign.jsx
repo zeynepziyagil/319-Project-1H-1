@@ -4,23 +4,23 @@ import Boxy from "./Boxy";
 import Popup from "reactjs-popup";
 
 import {AiOutlinePlusCircle} from "react-icons/ai";
-import { connect } from 'react-redux'
 var whoseProfile = 2;
 
 function add(){
-  return(<div>
-                <label>Course Name</label><br></br>
-                <input type="text" id="CourseName"/><br></br>
-                <label>Assignment Name</label><br></br>
-                <input type="text" id="Assignmentname"/><br></br>
-                <label>Assignment Due Date</label><br></br>
-                <input type="text" id="Assignmentduedate"/><br></br>
-                <label>Assignment Document</label><br></br>
-                <input type="text" id="Assignmentdocument"/><br></br>    
-                <label>Assignment explanation</label><br></br>
-                <input type="text" id="Assignment explanation"/><br></br>    
-
-   </div>);
+  return(
+  <div>
+    <label>Course Name</label><br></br>
+    <input type="text" id="CourseName"/><br></br>
+    <label>Assignment Name</label><br></br>
+    <input type="text" id="Assignmentname"/><br></br>
+    <label>Assignment Due Date</label><br></br>
+    <input type="text" id="Assignmentduedate"/><br></br>
+    <label>Assignment Document</label><br></br>
+    <input type="text" id="Assignmentdocument"/><br></br>    
+    <label>Assignment explanation</label><br></br>
+    <input type="text" id="Assignment explanation"/><br></br>    
+</div>
+);
 }
 
 
