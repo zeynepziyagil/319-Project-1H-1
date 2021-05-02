@@ -5,7 +5,16 @@ import {RiArrowRightSLine} from "react-icons/ri"
 import Chat from "./Chat";
 
 var name = "CS319";
-var name2 = "Group 1-H" 
+var name2 = "Group 1-H"; 
+var whoseProfile = 2;
+
+function showButton() {
+    return (
+        <div>
+            <button type="button">{name2}</button>
+        </div>
+    );
+}
 
 function MessagePage() {
     return (
@@ -19,7 +28,7 @@ function MessagePage() {
             </div>
             <div className="message">
                 <button type="button">{name}</button>
-                <button type="button">{name2}</button>
+                {whoseProfile === 0 ? showButton(): ( whoseProfile === 1 ? null : showButton())}
                 <div className="dropdown">
                     <button className="dropbtn">Direct Message</button>
                     <div className="dropdown-content">
@@ -31,6 +40,7 @@ function MessagePage() {
             </div>
             
             <input className="input-message" type="text" placeholder="Type the message you want to send."></input>
+            <button className="send-message" type="button">Send</button>
         </div>
     );
 }

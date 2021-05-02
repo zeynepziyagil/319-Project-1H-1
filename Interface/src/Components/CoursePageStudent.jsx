@@ -57,7 +57,8 @@ function fill(num)
 if(whoseProfile == 2)
     return (
         <div>
-            <h1 className="header">{coursename}</h1>
+           <h1 className="header">{coursename}</h1>
+
             <LogoUpper />
             <Announcement />
 

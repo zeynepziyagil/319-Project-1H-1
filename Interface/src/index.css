@@ -43,7 +43,7 @@ code {
 .signup {
     background-color: #f0c9c9;
     box-sizing: content-box;
-    width: 400px;
+    width: 500px;
     height: 800px;
     padding-left: 20px;
     padding-right: 20px;
@@ -58,8 +58,8 @@ code {
 .signup-instructor {
     background-color: #f0c9c9;
     box-sizing: content-box;
-    width: 400px;
-    height: 550px;
+    width: 500px;
+    height: 660px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 15px;
@@ -145,7 +145,7 @@ table {
     border-spacing: 5px;
 }
 
-.header {
+.header1 {
     position: absolute;
     right: 700px;
     left: 500px;
@@ -166,7 +166,7 @@ td {
 .announcement {
     border-radius: 25px;
     position: relative;
-    left: 1050px;
+    left: 1200px;
     background-color: #f1e7e7;
     padding: 10px 30px;
     height: 200px;
@@ -234,7 +234,7 @@ td {
     border-radius: 25px;
     position: relative;
     bottom: 400px;
-    left: 1050px;
+    left: 1200px;
     background-color: #f1e7e7;
     padding: 10px 30px;
     height: 200px;
@@ -246,7 +246,11 @@ td {
 
 .give-ad-button {
     position: relative;
+
     left: 450px;
+
+    left: 570px;
+
     bottom: 380px;
     background-color: #e19393;
     color: white;
@@ -760,6 +764,7 @@ td {
 }
 
 .deadline-input {
+
     text-align: center;
     position: relative;
     width: 50%;
@@ -795,6 +800,22 @@ buttonas {
     left: -530px;
     background-color: #612b2b;
     color: white;
+
+  text-align: center;
+  position: relative;
+  width: 50%;
+  left: 60px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.send-message {
+    position: absolute;
+    left: 855px;
+    top: 750px;
+    background-color: #e19393;
+    color: white;
+    padding: 10px 15px;
     border-radius: 10px;
     border: 5px;
     text-align: center;
@@ -816,4 +837,33 @@ buttonas {
     text-align: left;
     overflow-y: scroll;
     box-shadow: 0 2px 5px rgb(49, 45, 45);
+    margin-bottom: 20px;
+    width: 6%;
+}
+
+.edit-profile {
+    position: relative;
+    font-size: 25px;
+    bottom: 90px;
+    left: 235px;
+}
+
+.edit-icon {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.calendar {
+    position: relative;
+    left: 1000px;
+    bottom: 200px;
+    width: 50%;
+}
+
+.edit-profile2 {
+    position: relative;
+    font-size: 25px;
+    top: 140px;
+    left: 235px;
 }

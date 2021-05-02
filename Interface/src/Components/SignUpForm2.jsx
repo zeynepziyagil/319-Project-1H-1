@@ -26,6 +26,11 @@ function SignUpForm2() {
                 <input type="password" id="password"/><br></br>
                 <label>Confirm Password</label><br></br>
                 <input type="password" id="confirmPassword"/><br></br>
+                <center>
+                <p>Are you an instructor or a teaching assistant? Select below.</p>
+                <td><label for="instructor">Instructor</label><input type="radio" name="user" id="instructor" value="instructor"/></td>
+                <td><label for="ta">Teaching Assistant</label><input type="radio" name="user" id="ta" value="ta"/></td>
+                </center>
                 <button type="button"><Link to="Dashboard">Sign Up</Link></button>
             </form>
         </div>

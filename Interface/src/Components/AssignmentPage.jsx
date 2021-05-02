@@ -5,38 +5,37 @@ import GroupsThatUploadedAssignment from "./GroupsThatUploadedAssignment";
 import {Link} from "react-router-dom";
 import {AiOutlineEdit} from "react-icons/ai";
 
-var totalNumber = 15;
-var count = 0;
-var count2 = 0;
-var deadline ="23.05.2021"
-var newDeadline = "";
-
-function listGroups(group) {
-    count++;
-    return (
-        <li key={group.id} className={group.className}>
-            <Link to="/GroupPage">
-                {group.groupName}
-            </Link>
-        </li>
-    );
-}
-
-function countRequest(group) {
-    if ( group.request === true ) {
-        count2++;
-        return (
-            <li className={group.className}>
-                {group.groupName}
-            </li>
-        );
-    }
-}
 
 function AssignmentPage() {
 
+    function listGroups(group) {
+        count++;
+        return (
+            <li key={group.id} className={group.className}>
+                <Link to="/GroupPage">
+                    {group.groupName}
+                </Link>
+            </li>
+        );
+    }
+    
+    function countRequest(group) {
+        if ( group.request === true ) {
+            count2++;
+            return (
+                <li className={group.className}>
+                    {group.groupName}
+                </li>
+            );
+        }
+    }
     const [duedate, setDuedate] = React.useState(deadline)
     
+    var totalNumber = 15;
+    var count = 0;
+    var count2 = 0;
+    var deadline ="23.05.2021"
+    var newDeadline = "";
 
     return (
         <div>
