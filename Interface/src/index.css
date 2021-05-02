@@ -246,7 +246,7 @@ td {
 
 .give-ad-button {
     position: relative;
-    left: 520px;
+    left: 450px;
     bottom: 380px;
     background-color: #e19393;
     color: white;
@@ -654,7 +654,7 @@ td {
     height: 170px;
 }
 
-.header {
+.headerm {
     border-bottom: 1px solid gray;
     font-size: 18px;
     text-align: center;
@@ -678,7 +678,8 @@ td {
     display: grid;
     margin-bottom: 20px;
     position: relative;
-    top: 100px;
+    top: 10px;
+    float: left;
 }
 
 .actions {
@@ -709,60 +710,110 @@ td {
 }
 
 .uploaded-assignments {
-  border-radius: 25px;
-  position: relative;
-  top: 50px;
-  left: 100px;
-  background-color: #f1e7e7;
-  padding: 10px 20px;
-  height: 250px;
-  width: 300px;
-  text-align: left;
-  align-items: center;
-  box-shadow: 0 2px 5px rgb(49, 45, 45);
-  overflow-y: scroll;
+    border-radius: 25px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    background-color: #f1e7e7;
+    padding: 10px 20px;
+    height: 250px;
+    width: 300px;
+    text-align: left;
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(49, 45, 45);
+    overflow-y: scroll;
 }
 
 .group-links {
-  padding-bottom: 12px;
-  font-size: 20px;
+    padding-bottom: 12px;
+    font-size: 20px;
 }
 
 .assignment-stats {
-  border-radius: 25px;
-  position: relative;
-  top: 50px;
-  left: 125px;
-  background-color: #f1e7e7;
-  padding: 10px 20px;
-  height: 250px;
-  width: 500px;
-  text-align: left;
-  align-items: center;
-  box-shadow: 0 2px 5px rgb(49, 45, 45);
-  overflow-y: scroll;
+    border-radius: 25px;
+    position: relative;
+    top: 50px;
+    left: 125px;
+    background-color: #f1e7e7;
+    padding: 10px 20px;
+    height: 250px;
+    width: 500px;
+    text-align: left;
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(49, 45, 45);
+    overflow-y: scroll;
 }
 
 .extension-requests {
-  border-radius: 25px;
-  position: relative;
-  top: 50px;
-  left: 150px;
-  background-color: #f1e7e7;
-  padding: 10px 20px;
-  height: 250px;
-  width: 300px;
-  text-align: left;
-  align-items: center;
-  box-shadow: 0 2px 5px rgb(49, 45, 45);
-  overflow-y: scroll;
+    border-radius: 25px;
+    position: relative;
+    top: 50px;
+    left: 150px;
+    background-color: #f1e7e7;
+    padding: 10px 20px;
+    height: 250px;
+    width: 300px;
+    text-align: left;
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(49, 45, 45);
+    overflow-y: scroll;
 }
 
 .deadline-input {
-  text-align: center;
-  position: relative;
-  width: 50%;
-  left: 60px;
-  height: 40px;
-  border-radius: 20px;
+    text-align: center;
+    position: relative;
+    width: 50%;
+    left: 60px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.addassign {
+    position: relative;
+    margin: 1 px;
+}
+
+buttonas {
+    background-color: #641d1d;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    margin: 1px 1px;
+    font-size: 20px;
+    display: grid;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.addann {
+    position: absolute;
+    margin: 13 px;
+}
+
+.reqbutton {
+    position: relative;
+    left: -530px;
+    background-color: #612b2b;
+    color: white;
+    border-radius: 10px;
+    border: 5px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+    bottom: 140px;
+}
+
+.corchoiceassi {
+    border-radius: 25px;
+    position: relative;
+    bottom: 400px;
+    left: 1050px;
+    background-color: #dadadad3;
+    padding: 10px 30px;
+    height: 200px;
+    width: 200px;
+    text-align: left;
+    overflow-y: scroll;
+    box-shadow: 0 2px 5px rgb(49, 45, 45);
 }

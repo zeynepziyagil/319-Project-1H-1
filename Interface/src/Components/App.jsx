@@ -9,7 +9,7 @@ import StudentProfile from "./StudentProfile";
 import MessagePage from "./MessagePage";
 import GroupPage from "./GroupPage";
 import PeerreviewPage from "./PeerreviewPage"
-
+import AssignmentPage from "./AssignmentPage"
 function App() {
     return (
         <div>
@@ -22,6 +22,8 @@ function App() {
             <Route exact path="/MessagePage" component={MessagePage} />
             <Route exact path="/GroupPage" component={GroupPage} />
             <Route exact path="/PeerreviewPage" component={PeerreviewPage} />
+            <Route exact path="/AssignmentPage" component={AssignmentPage} />
+
         </div>
     );
 }

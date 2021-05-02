@@ -7,35 +7,31 @@ import {AiOutlinePlusCircle} from "react-icons/ai";
 import { connect } from 'react-redux'
 var whoseProfile = 2;
 
-function addCourse(){
+function add(){
   return(<div>
-                <label>CourseName</label><br></br>
+                <label>Course Name</label><br></br>
                 <input type="text" id="CourseName"/><br></br>
-                <label>CourseCode</label><br></br>
-                <input type="text" id="CourseCode"/><br></br>
-                <label>CouseEnrollCode</label><br></br>
-                <input type="text" id="CouseEnrollCode"/><br></br>      
+                <label>Assignment Name</label><br></br>
+                <input type="text" id="Assignmentname"/><br></br>
+                <label>Assignment Due Date</label><br></br>
+                <input type="text" id="Assignmentduedate"/><br></br>
+                <label>Assignment Document</label><br></br>
+                <input type="text" id="Assignmentdocument"/><br></br>    
+                <label>Assignment explanation</label><br></br>
+                <input type="text" id="Assignment explanation"/><br></br>    
 
    </div>);
 }
-function enrollCourse(){
-  return(<div>
-  <label>CourseCode</label><br></br>
-  <input type="text" id="CourseCode"/><br></br>
-  <label>CouseEnrollCode</label><br></br>
-  <input type="text" id="CouseEnrollCode"/><br></br>      
 
-</div>);
-}
 
 const contentStyle = {
     maxWidth: "600px",
     width: "90%"
   };
   
-  const AddSign = () => (
+  const Addassign = () => (
     <Popup
-      trigger={<button className="dashboardadd"><td><AiOutlinePlusCircle size="3em" /></td></button>}
+      trigger={<td><AiOutlinePlusCircle size="2em" /></td>}
       
       modal
       contentStyle={contentStyle}
@@ -46,13 +42,13 @@ const contentStyle = {
             &times;
           </a>
           <div className="content">
-            {whoseProfile=== 1 ? addCourse():enrollCourse()}
+            { add()}
           </div>
           <div className="actions">
           <button
               className="buttonxs"
             >
-              done 
+              create assignment 
             </button>
             <button
               className="buttonxs"
@@ -69,4 +65,4 @@ const contentStyle = {
     </Popup>
   );
 
-export default Boxy(AddSign);
+export default Boxy(Addassign);

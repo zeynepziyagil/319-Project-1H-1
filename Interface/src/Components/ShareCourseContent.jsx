@@ -7,35 +7,26 @@ import {AiOutlinePlusCircle} from "react-icons/ai";
 import { connect } from 'react-redux'
 var whoseProfile = 2;
 
-function addCourse(){
+function add(){
   return(<div>
-                <label>CourseName</label><br></br>
-                <input type="text" id="CourseName"/><br></br>
-                <label>CourseCode</label><br></br>
-                <input type="text" id="CourseCode"/><br></br>
-                <label>CouseEnrollCode</label><br></br>
-                <input type="text" id="CouseEnrollCode"/><br></br>      
+                <label>Explanation</label><br></br>
+                <input type="text" id="exp"/><br></br>
+                <label>Drag a file</label><br></br>
+                <input type="text" id="file"/><br></br>
+                
 
    </div>);
 }
-function enrollCourse(){
-  return(<div>
-  <label>CourseCode</label><br></br>
-  <input type="text" id="CourseCode"/><br></br>
-  <label>CouseEnrollCode</label><br></br>
-  <input type="text" id="CouseEnrollCode"/><br></br>      
 
-</div>);
-}
 
 const contentStyle = {
     maxWidth: "600px",
     width: "90%"
   };
   
-  const AddSign = () => (
+  const ShareCourseContent = () => (
     <Popup
-      trigger={<button className="dashboardadd"><td><AiOutlinePlusCircle size="3em" /></td></button>}
+      trigger={<button className="give-ad-button" type="button">Share Course Content</button>}
       
       modal
       contentStyle={contentStyle}
@@ -46,13 +37,13 @@ const contentStyle = {
             &times;
           </a>
           <div className="content">
-            {whoseProfile=== 1 ? addCourse():enrollCourse()}
+            { add()}
           </div>
           <div className="actions">
           <button
               className="buttonxs"
             >
-              done 
+              share
             </button>
             <button
               className="buttonxs"
@@ -69,4 +60,4 @@ const contentStyle = {
     </Popup>
   );
 
-export default Boxy(AddSign);
+export default Boxy(ShareCourseContent);

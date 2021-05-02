@@ -6,31 +6,106 @@ import Menu from "./Menu";
 import Poll from "./Poll";
 import ProjectGroups from "./ProjectGroups";
 import {AiTwotoneCheckCircle} from "react-icons/ai"
+import Addassign from "./Addassign"; 
+import Addannoun from "./Addannoun";
+import ShareCourseContent from "./ShareCourseContent";
+import ReqFormation from "./ReqFormation";
+import AssingmentChoices from "./AssingmentChoices";
+import CoursePAssi from "./CoursePAssi"
+
+
+
+
+
 
 function CoursePageStudent() {
+    
+var weeknum=5;
+var z = 0;
+var x =[];
+var elements =[];
+var coursename ="CS-319";
+var whoseProfile = 1;
+function showElement(add)
+{if(z<weeknum){z++;}
+if(elements.weeknum != 0 && whoseProfile==1)
+return(<div><tr><th className="table-headers">WEEK {z}</th><h5><Addassign /></h5></tr>
+
+<tr><AiTwotoneCheckCircle size="0.7em"/>&emsp;{elements}</tr>
+</div>)    
+else if(elements.weeknum != 0)
+    return(<div><tr><th className="table-headers">WEEK {z}</th></tr>
+    
+    <tr><AiTwotoneCheckCircle size="0.7em"/>&emsp;{elements}</tr>
+</div>)
+else    
+return(<div><tr><th className="table-headers">WEEK {z}</th></tr>
+   </div>)
+
+}
+function fill(num)
+{
+    for (let index = 0; index < num; index++) {
+        x.push(<div><tr><th className="table-headers">WEEK {weeknum}</th></tr>
+        </div>
+
+
+        );
+    }
+}
+
+if(whoseProfile == 2)
     return (
         <div>
-            <h1 className="header">CS 319</h1>
+            <h1 className="header">{coursename}</h1>
             <LogoUpper />
             <Announcement />
+
             <Poll />
             <ProjectGroups />
-            <Advertisement />
             <Menu />
+          
+            <CoursePAssi/>
+
             <table className="table">
-                <tr><th className="table-headers">WEEK 1</th></tr>
-                <tr><AiTwotoneCheckCircle size="0.7em"/>&emsp;Assignment 1</tr>
-                <tr><th className="table-headers">WEEK 2</th></tr>
-                <tr><AiTwotoneCheckCircle size="0.7em"/>&emsp;Requirements and Analysis Report: Iteration 1</tr>
-                <tr><th className="table-headers">WEEK 3</th></tr>
-                <tr><AiTwotoneCheckCircle size="0.7em"/>&emsp;Example Reports From Last Years</tr>
-                <tr><th className="table-headers">WEEK 4</th></tr>
-                <tr><AiTwotoneCheckCircle size="0.7em"/>&emsp;Design Report: Iteration 1</tr>
-                <tr><th className="table-headers">WEEK 5</th></tr>
-                <tr><AiTwotoneCheckCircle size="0.7em"/>&emsp;Design Report & Requirements and Analysis Report: Final</tr>
+          
+                {fill(weeknum)}{x.map(showElement)}
             </table>
         </div>
     );
+    else if(whoseProfile == 1)
+    return(<div>
+        <h1 className="header">{coursename}</h1>
+        <LogoUpper />
+        <Announcement />
+
+        <Poll />
+        <ProjectGroups />
+        <Menu />
+        <ShareCourseContent />
+        <CoursePAssi/>
+        <table className="table">
+      
+            {fill(weeknum)}{x.map(showElement)}
+        </table>
+    </div>);
+    else
+    return(<div>
+        <h1 className="header">{coursename}</h1>
+        <LogoUpper />
+        <Announcement />
+
+        <Poll />
+        <ProjectGroups />
+        <ReqFormation />
+        <Advertisement />
+        <Menu />
+        <table className="table">
+      
+            {fill(weeknum)}{x.map(showElement)}
+        </table>
+    </div>);
+
 }
 
 export default CoursePageStudent;
