@@ -4,40 +4,27 @@ import Boxy from "./Boxy";
 import Popup from "reactjs-popup";
 
 import {AiOutlinePlusCircle} from "react-icons/ai";
-
 import { connect } from 'react-redux'
-var whoseProfile = 1;
+var whoseProfile = 2;
 
-
-function addCourse(){
+function add(){
   return(<div>
-                <label>CourseName</label><br></br>
-                <input type="text" id="CourseName"/><br></br>
-                <label>CourseCode</label><br></br>
-                <input type="text" id="CourseCode"/><br></br>
-                <label>CouseEnrollCode</label><br></br>
-                <input type="text" id="CouseEnrollCode"/><br></br>      
-
+                <label>People you want to work together with</label><br></br>
+                <input type="text" id="people"/><br></br>
+               
+                
    </div>);
 }
-function enrollCourse(){
-  return(<div>
-  <label>CourseCode</label><br></br>
-  <input type="text" id="CourseCode"/><br></br>
-  <label>CouseEnrollCode</label><br></br>
-  <input type="text" id="CouseEnrollCode"/><br></br>      
 
-</div>);
-}
 
 const contentStyle = {
     maxWidth: "600px",
     width: "90%"
   };
   
-  const AddSign = () => (
+  const ReqFormation = () => (
     <Popup
-      trigger={<button className="dashboardadd"><td><AiOutlinePlusCircle size="3em" /></td></button>}
+      trigger={<button className="reqbutton" type="button">Request group formation</button>}
       
       modal
       contentStyle={contentStyle}
@@ -48,13 +35,13 @@ const contentStyle = {
             &times;
           </a>
           <div className="content">
-            {whoseProfile=== 1 ? addCourse():enrollCourse()}
+            { add()}
           </div>
           <div className="actions">
           <button
               className="buttonxs"
             >
-              done 
+              request
             </button>
             <button
               className="buttonxs"
@@ -71,4 +58,4 @@ const contentStyle = {
     </Popup>
   );
 
-export default Boxy(AddSign);
+export default Boxy(ReqFormation);

@@ -11,6 +11,11 @@ import AssingmentChoices from './AssingmentChoices';
 import PopUpTool from './PopUpTool';
 import AssignmentsGroupPage from './AssignmentsGroupPage';
 
+var whoseprofile =0;
+
+
+
+
 
 var groupname = "group 1-H";
 export const GroupPage = (props) => {

@@ -9,6 +9,7 @@ import StudentProfile from "./StudentProfile";
 import MessagePage from "./MessagePage";
 import GroupPage from "./GroupPage";
 import PeerreviewPage from "./PeerreviewPage"
+
 import AssignmentPage from "./AssignmentPage";
 import StudentProfileFromMyPointOfView from "./StudentProfileFromMyPointOfView";
 import InstructorProfile from "./InstructorProfile";
@@ -27,9 +28,11 @@ function App() {
             <Route exact path="/GroupPage" component={GroupPage} />
             <Route exact path="/PeerreviewPage" component={PeerreviewPage} />
             <Route exact path="/AssignmentPage" component={AssignmentPage} />
+
             <Route exact path="/StudentProfileMyView" component={StudentProfileFromMyPointOfView} />
             <Route exact path="/InstructorProfile" component={InstructorProfile} />
             <Route exact path="/InstructorProfileMyView" component={InstructorProfileFromMyPointOfView} />
+
         </div>
     );
 }
