@@ -15,7 +15,7 @@ function Menu() {
                     <td><AiOutlineBell size="3em" /></td>
                     <td><Link to="MessagePage"> <BiMessageDetail size="3em" /></Link></td>
                     <td>
-                        {whoseProfile === "student" ? <Link to="StudentProfile"><CgProfile size="3em" /></Link> : <Link to="Dashboard"><CgProfile size="3em" /></Link>}
+                        {whoseProfile === "student" ? <Link to="StudentProfileMyView"><CgProfile size="3em" /></Link> : <Link to="Dashboard"><CgProfile size="3em" /></Link>}
                     </td>
                     <td><NavigationBar /></td>
                 </tr>

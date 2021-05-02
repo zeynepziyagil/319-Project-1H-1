@@ -1,6 +1,25 @@
 import React from "react"
+import GiveAdButton from "./GiveAdButton";
+
+
 
 function Advertisement() {
+    var whoseprofile = 0;
+    var coursecirnum=1;
+    var x =[];
+    function showElement(add)
+    {
+    return(<div><p>Looking for a group member who is qualified in JavaScript.</p>
+       </div>)
+    
+    }
+    function fill(num)
+    {
+        for (let index = 0; index < num; index++) {
+            x.push(<div><p>Looking for a group member who is qualified in JavaScript.</p>
+                </div>);
+        }
+    }
     return (
         <div>
             <div className="advertisement">
@@ -8,11 +27,10 @@ function Advertisement() {
                     <h2>Advertisement</h2>
                 </div>
                 <div>
-                    <p>Looking for a group member who is qualified in JavaScript.</p>
-                    <p>I don't have a group. Please contact me if you are looking for a group member.</p>
+                {fill(coursecirnum)}{x.map(showElement)}
                 </div>
             </div>
-            <button className="give-ad-button" type="button">Give Advertisement</button>
+            <GiveAdButton />
         </div>
     );
 }
