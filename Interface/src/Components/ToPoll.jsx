@@ -2,25 +2,45 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import Boxy from "./Boxy";
 import Popup from "reactjs-popup";
+import trypoll from "./trypoll"
 
 import {AiOutlinePlusCircle} from "react-icons/ai";
-var whoseProfile = 2;
 
-function add(){
-  return(<div>
-                <label>Course Name</label><br></br>
-                <input type="text" id="CourseName"/><br></br>
-                <label>Assignment Name</label><br></br>
-                <input type="text" id="Assignmentname"/><br></br>
-                <label>Assignment Due Date</label><br></br>
-                <input type="text" id="Assignmentduedate"/><br></br>
-                <label>Assignment Document</label><br></br>
-                <input type="text" id="Assignmentdocument"/><br></br>    
-                <label>Assignment explanation</label><br></br>
-                <input type="text" id="Assignment explanation"/><br></br>    
+var whoseProfile = 0;
+var polnm ="poll 1"
+var coursecirnum=3;
+var pollname ="poll 1";
 
-   </div>);
+function showAnswer(polly){
+return(<div><table><tr>
+  <td><input type="radio" name ="answer" /></td>
+  <td><p>{polly}</p> </td>
+   </tr></table>        
+</div>);
+
+
 }
+
+
+function showPoll(pollx) {
+  if(pollx.id===0)
+  return(
+        <div>
+          <label><h3>{pollx.que}: </h3></label><br></br>
+          <input className ="textfield" type="text" id="exp"/><br></br>
+          {/*expten answ çek*/}
+          </div>
+  )
+  else
+    return(
+      <div>
+      <h3>{pollx.que}: </h3>
+      {(pollx.ans).map(showAnswer)}
+      </div>);
+
+}
+
+
 
 
 const contentStyle = {
@@ -28,9 +48,11 @@ const contentStyle = {
     width: "90%"
   };
   
-  const Addassign = () => (
+const ToPoll = () => (
+
+
     <Popup
-      trigger={<td><AiOutlinePlusCircle size="2em" /></td>}
+      trigger={<button className="subbutton" type="button">{pollname}</button>}
       
       modal
       contentStyle={contentStyle}
@@ -41,13 +63,13 @@ const contentStyle = {
             &times;
           </a>
           <div className="content">
-            { add()}
+          {trypoll.map(showPoll)}
           </div>
           <div className="actions">
           <button
               className="buttonxs"
             >
-              create assignment 
+              submit
             </button>
             <button
               className="buttonxs"
@@ -64,4 +86,4 @@ const contentStyle = {
     </Popup>
   );
 
-export default Boxy(Addassign);
+export default Boxy(ToPoll);

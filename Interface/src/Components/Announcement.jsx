@@ -2,11 +2,11 @@ import React from "react"
 import Addannoun from "./Addannoun";
 
 function Announcement() {
-    var whoseprofile = 0;
+    var whoseprofile = 1;
     var coursecirnum=3;
     var x =[];
     function showElement(anno)
-    { if(whoseprofile == 1)
+    { if(whoseprofile === 1)
     return(<div>
         <p>128 milyar dolar nerede?</p>
 
@@ -26,7 +26,7 @@ function Announcement() {
         }
     }
     
-    if(whoseprofile !=1)
+    if(whoseprofile !==1)
     return (
         <div className="announcement">
             <div className="top">
@@ -53,3 +53,5 @@ function Announcement() {
 }
 
 export default Announcement;
+
+
