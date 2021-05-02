@@ -28,7 +28,6 @@ function StudentProfileFromMyPointOfView() {
                 <tr><b>COMMENTS</b></tr>
                 <tr><textarea rows="6" cols="70" ></textarea></tr>
             </table>
-            <button className="send-message-button" type="button"><FiSend size="1.2em" className="message-icon"/>&emsp;Send Message</button> 
             <div className="edit-profile"><p>Edit Profile<TiEdit className="edit-icon" size="3em"/></p></div>
         </div>
     );

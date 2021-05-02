@@ -12,7 +12,8 @@ import ShareCourseContent from "./ShareCourseContent";
 import ReqFormation from "./ReqFormation";
 import AssingmentChoices from "./AssingmentChoices";
 import CoursePAssi from "./CoursePAssi"
-
+import trypoll from "./trypoll"
+import ToPoll from "./ToPoll"
 
 
 
@@ -28,12 +29,12 @@ var coursename ="CS-319";
 var whoseProfile = 1;
 function showElement(add)
 {if(z<weeknum){z++;}
-if(elements.weeknum != 0 && whoseProfile==1)
+if(elements.weeknum !== 0 && whoseProfile===1)
 return(<div><tr><th className="table-headers">WEEK {z}</th><h5><Addassign /></h5></tr>
 
 <tr><AiTwotoneCheckCircle size="0.7em"/>&emsp;{elements}</tr>
 </div>)    
-else if(elements.weeknum != 0)
+else if(elements.weeknum !== 0)
     return(<div><tr><th className="table-headers">WEEK {z}</th></tr>
     
     <tr><AiTwotoneCheckCircle size="0.7em"/>&emsp;{elements}</tr>
@@ -54,7 +55,7 @@ function fill(num)
     }
 }
 
-if(whoseProfile == 2)
+if(whoseProfile === 2)
     return (
         <div>
            <h1 className="header">{coursename}</h1>
@@ -74,7 +75,7 @@ if(whoseProfile == 2)
             </table>
         </div>
     );
-    else if(whoseProfile == 1)
+    else if(whoseProfile === 1)
     return(<div>
         <h1 className="header">{coursename}</h1>
         <LogoUpper />

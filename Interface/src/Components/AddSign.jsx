@@ -5,7 +5,7 @@ import Popup from "reactjs-popup";
 
 import {AiOutlinePlusCircle} from "react-icons/ai";
 
-import { connect } from 'react-redux'
+
 var whoseProfile = 1;
 
 
@@ -37,7 +37,7 @@ const contentStyle = {
   
   const AddSign = () => (
     <Popup
-      trigger={<button className="dashboardadd"><td><AiOutlinePlusCircle size="3em" /></td></button>}
+      trigger={<buttonas className="dashboardadd"><td><AiOutlinePlusCircle size="3em" /></td></buttonas>}
       
       modal
       contentStyle={contentStyle}
