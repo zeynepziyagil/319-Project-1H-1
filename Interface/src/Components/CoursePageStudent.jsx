@@ -10,7 +10,7 @@ import {AiTwotoneCheckCircle} from "react-icons/ai"
 function CoursePageStudent() {
     return (
         <div>
-            <h1 className="header">CS 319</h1>
+            <h1 className="header1">CS 319</h1>
             <LogoUpper />
             <Announcement />
             <Poll />

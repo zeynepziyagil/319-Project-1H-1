@@ -4,7 +4,7 @@ import Boxy from "./Boxy";
 import Popup from "reactjs-popup";
 
 import {AiOutlinePlusCircle} from "react-icons/ai";
-import { connect } from 'react-redux'
+
 var whoseProfile = "instructor";
 
 

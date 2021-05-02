@@ -2,8 +2,9 @@ import React from "react";
 import LogoUpper from "./LogoUpper";
 import Menu from "./Menu";
 import {FiSend} from "react-icons/fi"
+import {TiEdit} from "react-icons/ti"
 
-function StudentProfile(props) {
+function StudentProfileFromMyPointOfView() {
     return (
         <div>
             <LogoUpper />
@@ -12,13 +13,13 @@ function StudentProfile(props) {
                 <tr>
                     <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR2HDymu2u6Ds4U3-bioGXvnp-yHqz8bRehw&usqp=CAU"/></td>
                     <td className="profile-table-rows">
-                        <tr><b>Name:</b>{props.name}</tr>
-                        <tr><b>Surname:</b>{props.surname}</tr>
-                        <tr><b>Department:</b>{props.department}</tr>
-                        <tr><b>Grade:</b>{props.grade}</tr>
-                        <tr><b>Email:</b> {props.mail}</tr>
-                        <tr><b>Student ID:</b>{props.id}</tr>
-                        <tr><b>Group Number:</b>{props.groupNumber}</tr>
+                        <tr><b>Name:</b> Ahmet</tr>
+                        <tr><b>Surname:</b> Yıldırım</tr>
+                        <tr><b>Department:</b> CS</tr>
+                        <tr><b>Grade:</b> 3</tr>
+                        <tr><b>Email:</b> ahmet@yıldırım.com</tr>
+                        <tr><b>Student ID:</b> 21507854</tr>
+                        <tr><b>Group Number:</b> 1-H</tr>
                     </td>
                 </tr>
             </table>
@@ -28,8 +29,9 @@ function StudentProfile(props) {
                 <tr><textarea rows="6" cols="70" ></textarea></tr>
             </table>
             <button className="send-message-button" type="button"><FiSend size="1.2em" className="message-icon"/>&emsp;Send Message</button> 
+            <div className="edit-profile"><p>Edit Profile<TiEdit className="edit-icon" size="3em"/></p></div>
         </div>
     );
 }
 
-export default StudentProfile;
+export default StudentProfileFromMyPointOfView;
