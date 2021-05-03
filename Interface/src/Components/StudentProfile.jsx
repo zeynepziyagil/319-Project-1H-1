@@ -27,7 +27,7 @@ function StudentProfile(props) {
                 <tr><b>COMMENTS</b></tr>
                 <tr><textarea rows="6" cols="70" ></textarea></tr>
             </table>
-            <button className="send-message-button" type="button"><FiSend size="1.2em" className="message-icon"/>&emsp;Send Message</button> 
+            <button className="send-message-button2" type="button"><FiSend size="1.2em" className="message-icon"/>&emsp;Send Message</button> 
         </div>
     );
 }

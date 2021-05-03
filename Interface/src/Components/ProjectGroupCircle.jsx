@@ -11,7 +11,4 @@ export const ProjectGroupCircle = (props) => {
     )
 }
 
-
-
-
 export default ProjectGroupCircle;

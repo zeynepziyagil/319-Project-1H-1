@@ -5,12 +5,20 @@ import {Link} from "react-router-dom";
 function SignUpForm() {
     const [info,setName] = React.useState({name: "", surname: "", email: "", department: "", grade: null, id: "", password: ""});
 
+    const [password2, setPassWord2] = React.useState("");
+
     function handleChange(event) {
         setName({ ...info, [event.target.id]: event.target.value });
     }
 
     function showMessage() {
-        alert(info.name + info.surname + info.name + info.department + info.email);
+        if (info.password != password2) {
+            alert("Passwords do not match");
+        }
+    }
+
+    function compare(event) {
+        setPassWord2(event.target.value);
     }
     return (
         <div className="signup">
@@ -41,7 +49,7 @@ function SignUpForm() {
                 <label>Password</label><br></br>
                 <input onChange={handleChange} type="password" id="password" value={info.password}/><br></br>
                 <label>Confirm Password</label><br></br>
-                <input type="password" id="confirmPassword"/><br></br>
+                <input onChange={compare} type="password" id="confirmPassword" value={password2}/><br></br>
                 <button onClick={showMessage}type="button"><Link to="Dashboard">Sign Up</Link></button>
             </form>
         </div>

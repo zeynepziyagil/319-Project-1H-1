@@ -122,7 +122,7 @@ label {
 .circular-label {
     position: relative;
     top: 40px;
-    left: 100px;
+    left: 440px;
     width: 400px;
     height: 350px;
     margin: 10px;
@@ -281,7 +281,13 @@ td {
 
 .profile-table {
     top: 50px;
-    left: 50px;
+    left: 80px;
+    position: relative;
+}
+
+.profile-table2 {
+    top: 50px;
+    left: 510px;
     position: relative;
 }
 
@@ -292,7 +298,24 @@ td {
 
 .send-message-button {
     position: absolute;
-    left: 100px;
+    left: 560px;
+    top: 500px;
+    background-color: #e19393;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 5px;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    display: flex;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.send-message-button2 {
+    position: absolute;
+    left: 80px;
     top: 500px;
     background-color: #e19393;
     color: white;
@@ -676,11 +699,12 @@ td {
     border: 5px;
     text-align: center;
     margin: auto;
-    font-size: 20px;
+    font-size: 25px;
     display: grid;
     margin-bottom: 20px;
     position: relative;
-    top: 10px;
+    bottom: 10px;
+    left: 245px;
     float: left;
 }
 
@@ -707,8 +731,8 @@ td {
 
 .dashboardadd {
     position: absolute;
-    left: 720px;
-    top: 170px;
+    left: 300px;
+    top: 430px;
 }
 
 .uploaded-assignments {
@@ -807,8 +831,8 @@ buttonas {
 
 .send-message {
     position: absolute;
-    left: 855px;
-    top: 950px;
+    left: 900px;
+    top: 880px;
     background-color: #e19393;
     color: white;
     padding: 10px 15px;
@@ -845,6 +869,13 @@ buttonas {
     left: 235px;
 }
 
+.edit-profile2 {
+    position: relative;
+    font-size: 25px;
+    bottom: 180px;
+    left: 235px;
+}
+
 .edit-icon {
     position: relative;
     top: 20px;
@@ -856,13 +887,14 @@ buttonas {
     left: 1000px;
     bottom: 200px;
     width: 50%;
+    
 }
 
 .edit-profile2 {
     position: relative;
     font-size: 25px;
-    top: 140px;
-    left: 235px;
+    top: 50px;
+    left: 750px;
 }
 
 .subbutton {

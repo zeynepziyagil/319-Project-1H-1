@@ -10,29 +10,18 @@ import {Link} from "react-router-dom";
 
 
 function Dashboard() {
-    var whoseprofile = 0;
-    var coursecirnum= 2;
-    var groupcirnum = 1;
-    var x = [];
-    function showElement(circle)
-    {
-    return(<div><CourseCircle /></div>)
-    
-    }
-    function fill(num)
-    {
-        for (let index = 0; index < num; index++) {
-            x.push(<div><CourseCircle /></div>);
-        }
-    }
-   
+    var whoseprofile = 2;
     return (
         <div>
             <LogoUpper />
             <Menu /><br></br><br></br><br></br><br></br>
-            {fill(coursecirnum)}{x.map(showElement)}
-            <ProjectGroupCircle/>
-            <AddSign/>
+            <table>
+                <tr>
+                    <td><CourseCircle /></td>
+                    <td>{whoseprofile === 0 || whoseprofile === 2 ? <ProjectGroupCircle/> : null}</td>
+                    <td><AddSign/></td>
+                </tr>
+            </table>
         </div>
     );
 }

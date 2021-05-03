@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import Boxy from "./Boxy";
 import Popup from "reactjs-popup";
-
+import AddDocument from "./AddDocument"
 import {AiOutlinePlusCircle} from "react-icons/ai";
 var whoseProfile = 2;
 
@@ -10,8 +10,8 @@ function add(){
   return(<div>
                 <label>Explanation</label><br></br>
                 <input type="text" id="exp"/><br></br>
-                <label>Drag a file</label><br></br>
-                <input type="text" id="file"/><br></br>
+                <label>Upload a file</label><br></br>
+                <AddDocument />
                 
 
    </div>);

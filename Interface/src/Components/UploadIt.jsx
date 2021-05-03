@@ -2,15 +2,16 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import Boxy from "./Boxy";
 import Popup from "reactjs-popup";
+import AddDocument from "./AddDocument";
 
 import {AiOutlinePlusCircle} from "react-icons/ai";
-import { connect } from 'react-redux'
 var whoseProfile = 2;
 
 function add(){
   return(<div>
                 <label>Upload</label><br></br>
-                <input type="text" id="exp"/><br></br>
+                <input className="textfield" type="text" id="exp"/><br></br>
+                <AddDocument />
                 
                 
 
@@ -39,11 +40,6 @@ const contentStyle = {
             { add()}
           </div>
           <div className="actions">
-          <button
-              className="buttonxs"
-            >
-              share
-            </button>
             <button
               className="buttonxs"
               onClick={() => {
