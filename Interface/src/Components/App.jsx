@@ -14,9 +14,11 @@ import StudentProfileFromMyPointOfView from "./StudentProfileFromMyPointOfView";
 import InstructorProfile from "./InstructorProfile";
 import InstructorProfileFromMyPointOfView from "./InstructorProfileFromMyPointOfView";
 import axios from "axios";
+import GroupPageOtherPeople from "./GroupPageOtherPeople";
+import TeachingAssistantProfile from "./TeachingAssistantProfile";
+import TeachingAssistantProfileFromMyPointOfView from "./TeachingAssistantProfileFromMyPointOfView";
 
 function App() {
-
     return (
         <div>
             <Route exact path="/" component={SignInPage} />
@@ -32,6 +34,9 @@ function App() {
             <Route exact path="/StudentProfileMyView" component={StudentProfileFromMyPointOfView} />
             <Route exact path="/InstructorProfile" component={InstructorProfile} />
             <Route exact path="/InstructorProfileMyView" component={InstructorProfileFromMyPointOfView} />
+            <Route exact path="/GroupPageOtherPeople" component={GroupPageOtherPeople} />
+            <Route exact path="/TeachingAssistantProfile" component={TeachingAssistantProfile} />
+            <Route exact path="/TeachingAssistantProfileMyView" component={TeachingAssistantProfileFromMyPointOfView} />
         </div>
     );
 }

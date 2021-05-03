@@ -35,7 +35,7 @@ const contentStyle = {
           <div className="content">
             { add()}
           </div>
-          <div className="actions">
+          <center><div className="actions">
           <button
               className="buttonxs"
             >
@@ -50,7 +50,7 @@ const contentStyle = {
             >
               close 
             </button>
-          </div>
+          </div></center>
         </div>
       )}
     </Popup>

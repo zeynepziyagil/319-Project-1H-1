@@ -9,10 +9,11 @@ function SignInForm() {
     }
 
     function showMessage(event) {
-        axios.post("http://localhost:8080/sign-in", info).then(function(response){
+        axios.post("http://localhost:8080/sign-in/", info).then(function(response){
             console.log(response.data);
         });
     };
+
     return (
         <div className="signin">
             <h3 className="name">Sign In</h3>

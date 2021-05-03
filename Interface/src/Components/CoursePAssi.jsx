@@ -31,8 +31,6 @@ render() {
             checked={value==="crassignment3"}
             onChange={this.onChange}/>
             </label>
-            {/*{value} diye çekcen value gerekince uttonda*/}
-
         </div>
         
     )

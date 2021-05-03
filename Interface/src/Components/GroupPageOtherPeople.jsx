@@ -14,27 +14,17 @@ import GiveAdButton from './GiveAdButton';
 
 var groupname = "GROUP 1-H";
 
-function GroupPage() {
+function GroupPageOtherPeople() {
 
-    return(
+    return (
         <div>
             <LogoUpper />
-            <h1 className="header-group-page">{groupname}</h1>
+            <h1 className="header-group-page-other">{groupname}</h1>
             <Menu />
             <PeerReview />
             <GroupInfoBox />
-            <AssignmentUpload />
-            <MeetingsGroup/>
-            <AssingmentChoices/>
-            <AssignmentsGroupPage/>
-            <AssignmentsGroupPage/>
-            <GiveAdButton />
         </div>
-    );
+    )
 }
 
-
-
-
-
-export default GroupPage;
+export default GroupPageOtherPeople;
