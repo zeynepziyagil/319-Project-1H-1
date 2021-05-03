@@ -1,15 +1,15 @@
 import React from "react";
 import Logo from "./Logo";
-import SignUpForm from "./SignUpForm";
+import SignUpForm2 from "./SignUpForm2";
 
-function SignUpPageStudent() {
+function SignUpPageInstructor() {
     return (
         <div>
             <Logo />
-            <SignUpForm />
+            <SignUpForm2 />
         </div>
 
     );
 }
 
-export default SignUpPageStudent;
+export default SignUpPageInstructor;
