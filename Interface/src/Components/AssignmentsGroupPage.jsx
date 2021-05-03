@@ -3,14 +3,14 @@ import Popup from "reactjs-popup";
 import {AiOutlinePlusCircle} from "react-icons/ai";
 import {Link} from "react-router-dom";
 
-var assinfo ="Assignment 1: Design Report. ";
-var uploadst="uploaded";
-var gradest="not graded";
-var feedbackst="given by instr";
+var assinfo ="Assignment 1: Design Report ";
+var uploadst="UPLOADED";
+var gradest="NOT GRADED";
+var feedbackst="GIVEN";
 
 function AssignmentsGroupPage() {
-   var whoseprofile =0;
-   var coursecirnum =3;
+   var whoseprofile = 0;
+   var coursecirnum = 1;
   var x =[];
 
   function showElement(anno){
@@ -22,7 +22,7 @@ function AssignmentsGroupPage() {
     else 
       return (
         <div>
-          <p>128 milyar dolar nerede?.</p>
+          <p>Great Job!</p>
        </div> );
   }
   function fill(num) {

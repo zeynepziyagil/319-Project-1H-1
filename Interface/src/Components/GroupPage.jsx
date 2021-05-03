@@ -27,7 +27,6 @@ function GroupPage() {
             <MeetingsGroup/>
             <AssingmentChoices/>
             <AssignmentsGroupPage/>
-            <AssignmentsGroupPage/>
             <GiveAdButton />
         </div>
     );

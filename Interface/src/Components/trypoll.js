@@ -7,18 +7,18 @@ var trypoll = [{
     },
     {
         id: 4,
-        que: " msdbd????",
-        ans: ["a", "b", "c", "d"],
+        que: "Rate your Java knowledge from 1 to 4",
+        ans: ["1", "2", "3", "4"],
 
     },
     {
         id: 3,
-        que: "Great grojskup member???*",
-        ans: [1, 2, 3],
+        que: "Which language do you feel most comfortamble?",
+        ans: ["Java", "C++", "Python"],
     },
     {
         id: 0,
-        que: "Great group member????",
+        que: "Add something if you want.",
 
     }
 ];
