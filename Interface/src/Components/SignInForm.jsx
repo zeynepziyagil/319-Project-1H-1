@@ -4,15 +4,14 @@ import axios from "axios";
 
 function SignInForm() {
     const [info,setInfo] = React.useState({mail: "", password: ""});
-
     function handleChange(event) {
         setInfo({ ...info, [event.target.id]: event.target.value });
     }
 
     function showMessage(event) {
         axios.post("http://localhost:8080/sign-in", info).then(function(response){
-            console.log(response);
-          });
+            console.log(response.data);
+        });
     };
     return (
         <div className="signin">
