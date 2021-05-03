@@ -23,7 +23,7 @@ function MessagePage() {
             <Menu />
             <h3 className="header-mes">Send Messages To:</h3>
             <div className="chat">
-                <h3 className="name">Ali Yavuz</h3>
+                <h3 className="name">Onat Postacı</h3>
                 <Chat />
             </div>
             <div className="message">

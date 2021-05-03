@@ -5,9 +5,10 @@ import PeerreviewPage from "./PeerreviewPage"
 import Popup from "reactjs-popup";
 
 var whoseprofile = 2;
-var member1 = "Yıldırım Demir";
-var member2 = "Ali Ayhan";
-var member3 = "Deniz Hayat";
+var member1 = "İlke Kaş";
+var member2 = "Zeynep Büşra Ziyagil";
+var member3 = "Yaren Yılmaz";
+var member4 = "Onat Postacı";
 function PeerReview() {
 function ReviewOne(mem)
 {function add(){
@@ -75,7 +76,8 @@ function ReviewOne(mem)
                 <h2><Link to="PeerreviewPage">Peer Reviews</Link></h2>
                 <h2><Link to="StudentProfile">{member1}</Link></h2>
                 <h2><Link to="StudentProfile">{member2}</Link></h2> 
-                <h2><Link to="StudentProfile">{member3}</Link></h2> 
+                <h2><Link to="StudentProfile">{member3}</Link></h2>
+                <h2><Link to="StudentProfile">{member4}</Link></h2> 
             </div>
         </div>
     )
@@ -86,7 +88,8 @@ function ReviewOne(mem)
             <h2>Peer Reviews</h2>
             <h2>{ReviewOne(member1)}</h2>
             <h2>{ReviewOne(member2)}</h2> 
-            <h2>{ReviewOne(member3)}</h2> 
+            <h2>{ReviewOne(member3)}</h2>
+            <h2>{ReviewOne(member4)}</h2> 
         </div>
     </div>
     )
@@ -96,7 +99,8 @@ function ReviewOne(mem)
             <h2>Peer Reviews</h2>
             <h2><Link to="StudentProfile">{member1}</Link></h2>
             <h2><Link to="StudentProfile">{member2}</Link></h2> 
-            <h2><Link to="StudentProfile">{member3}</Link></h2> 
+            <h2><Link to="StudentProfile">{member3}</Link></h2>
+            <h2><Link to="StudentProfile">{member4}</Link></h2>  
         </div>
     </div>
     )
