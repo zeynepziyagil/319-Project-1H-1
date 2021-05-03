@@ -6,7 +6,7 @@ var groupid =10;
 export const ProjectGroupCircle = (props) => {
     return (
         <div className="circular-label">
-        <Link to="GroupPage"><label className="dashboard-label">{groupname}</label></Link>
+        <Link to="GroupPage"><label className="dashboard-label">{props.name}</label></Link>
     </div>
     )
 }

@@ -10,19 +10,36 @@ import {Link} from "react-router-dom";
 
 
 function Dashboard() {
+    /*componentDidMount =() =>{
+        const email = localStorage.getItem('userMail');
+        //this.setState({ email });
+      }*/
+
+    var emailUser = sessionStorage.getItem('userMail'); 
     var whoseprofile = 2;
     const [userCourse, setUserCourse] = React.useState({})
+    const [userGroup, setUserGroup] = React.useState({})
+    const str = "http://localhost:8080/dashboard/" + emailUser;
+    const str2 = "http://localhost:8080/dashboard/group/" + emailUser; 
     const fetchUserCourse = () => {
-        axios.get("http://localhost:8080/dashboard").then(res => {
+        axios.get(str).then(res => {
             console.log(res);
             setUserCourse(res.data);
         });
     };
-
+    const fetchUserGroup = () => {
+        axios.get(str2).then(response => {
+            console.log(response);
+            setUserGroup(response.data);
+            console.log(userGroup.maxMemberNum);
+        })
+    };
     React.useEffect(() => {
         fetchUserCourse();
     }, []);
-
+    React.useEffect(() => {
+        fetchUserGroup();
+    }, []);
     return (
         <div>
             <LogoUpper />
@@ -30,7 +47,7 @@ function Dashboard() {
             <table>
                 <tr>
                     <td><CourseCircle name={userCourse.name}/></td>
-                    <td>{whoseprofile === 0 || whoseprofile === 2 ? <ProjectGroupCircle/> : null}</td>
+                    <td>{whoseprofile === 0 || whoseprofile === 2 ? <ProjectGroupCircle name={userGroup.name}/> : null}</td>
                     <td><AddSign/></td>
                 </tr>
             </table>
