@@ -153,6 +153,17 @@ table {
     font-size: 40px;
 }
 
+.header-peer-review {
+    position: relative;
+    bottom: 100px;
+}
+
+.header-group-page {
+    position: relative;
+    bottom: 100px;
+    left: 700px;
+}
+
 .header-mes {
     position: relative;
     font-size: 30px;
@@ -179,11 +190,12 @@ td {
 .peerReview {
     border-radius: 25px;
     position: relative;
-    left: 1050px;
+    left: 1380px;
     background-color: #dadadad3;
     padding: 10px 30px;
     height: 300px;
     width: 200px;
+    bottom: 50px;
     text-align: left;
     box-shadow: 0 2px 5px rgb(49, 45, 45);
     overflow-y: scroll;
@@ -246,9 +258,8 @@ td {
 
 .give-ad-button {
     position: relative;
-    left: 450px;
-    left: 570px;
-    bottom: 380px;
+    bottom: 1700px;
+    left: 580px;
     background-color: #e19393;
     color: white;
     padding: 10px 15px;
@@ -344,7 +355,7 @@ td {
 .groupinfo {
     border-radius: 25px;
     position: relative;
-    bottom: 230px;
+    bottom: 350px;
     left: 40px;
     background-color: #dadadad3;
     padding: 10px 30px;
@@ -367,8 +378,8 @@ td {
 .assi {
     border-radius: 25px;
     position: relative;
-    bottom: 170px;
-    left: 49px;
+    bottom: 300px;
+    left: 40px;
     background-color: #dadadad3;
     padding: 10px 30px;
     height: 220px;
@@ -381,8 +392,8 @@ td {
 .meeting {
     border-radius: 25px;
     position: relative;
-    bottom: 95px;
-    left: 49px;
+    bottom: 240px;
+    left: 40px;
     background-color: #dadadad3;
     padding: 10px 30px;
     height: 250px;
@@ -395,8 +406,8 @@ td {
 .choiceassi {
     border-radius: 25px;
     position: relative;
-    bottom: 800px;
-    left: 1050px;
+    bottom: 830px;
+    left: 1380px;
     background-color: #dadadad3;
     padding: 10px 30px;
     height: 250px;
@@ -426,8 +437,8 @@ td {
 .asinfo {
     border-radius: 25px;
     position: relative;
-    bottom: 1300px;
-    left: 400px;
+    bottom: 1450px;
+    left: 600px;
     background-color: #f5f1f1f1;
     padding: 10px 30px;
     height: 400px;

@@ -7,7 +7,7 @@ function PeerreviewPage() {
     return (
         <div>
             <LogoUpper />
-            <center><h1 className="header">{groupname}</h1></center>
+            <center><h1 className="header-peer-review">{groupname}</h1></center>
             <Menu />
             <Review />
             <Review />

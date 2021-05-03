@@ -13,37 +13,30 @@ import AssignmentsGroupPage from './AssignmentsGroupPage';
 import GiveAdButton from './GiveAdButton';
 
 var whoseprofile = 0;
-var isMember = true;
-var groupname = "group 1-H";
+var isMember = false;
+var groupname = "GROUP 1-H";
 export const GroupPage = (props) => {
 
     function addx(){
-        return(<div>
-                      <label>Enter date</label><br></br>
-                      <input type="text" id="exp"/><br></br>
-                      
-                      
-      
-         </div>);
+        return (
+            <div>
+              <label>Enter date</label><br></br>
+              <input type="text" id="exp"/><br></br>
+            </div>
+            );
       }
      
-      
-      
       const contentStyle = {
           maxWidth: "600px",
           width: "90%"
         };
         
 
-
-
-
-
     if(isMember)
     return(
         <div>
-            <h1 className="header">{groupname}</h1>
             <LogoUpper />
+            <h1 className="header-group-page">{groupname}</h1>
             <Menu />
             <PeerReview />
             <GroupInfoBox />
@@ -53,14 +46,12 @@ export const GroupPage = (props) => {
             <AssignmentsGroupPage/>
             <AssignmentsGroupPage/>
             <GiveAdButton />
-
-         
         </div>
     )
     else
     return (
         <div>
-            <h1 className="header">{groupname}</h1>
+            <h1 className="header-peer-review">{groupname}</h1>
             <LogoUpper />
             <Menu />
             <PeerReview />
