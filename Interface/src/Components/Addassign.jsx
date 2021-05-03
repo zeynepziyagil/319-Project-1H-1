@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import Boxy from "./Boxy";
 import Popup from "reactjs-popup";
-
+import AddDocument from "./AddDocument"
 import {AiOutlinePlusCircle} from "react-icons/ai";
 var whoseProfile = 2;
 
@@ -16,7 +16,7 @@ function add(){
     <label>Assignment Due Date</label><br></br>
     <input type="text" id="Assignmentduedate"/><br></br>
     <label>Assignment Document</label><br></br>
-    <input type="text" id="Assignmentdocument"/><br></br>    
+    <AddDocument />   
     <label>Assignment explanation</label><br></br>
     <input type="text" id="Assignment explanation"/><br></br>    
 </div>

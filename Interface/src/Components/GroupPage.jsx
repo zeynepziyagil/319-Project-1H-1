@@ -12,12 +12,8 @@ import PopUpTool from './PopUpTool';
 import AssignmentsGroupPage from './AssignmentsGroupPage';
 import GiveAdButton from './GiveAdButton';
 
-var whoseprofile =0;
-
-
-
-
-var isMember = false;
+var whoseprofile = 0;
+var isMember = true;
 var groupname = "group 1-H";
 export const GroupPage = (props) => {
 

@@ -2,7 +2,7 @@ import React from "react";
 import ToPoll from "./ToPoll"
 import CreatePoll from "./CreatePoll"
 function Poll() {
-    var whoseprofile = 1;
+    var whoseprofile = 0;
     var coursecirnum=3;
     var x =[];
     function showElement(anno)

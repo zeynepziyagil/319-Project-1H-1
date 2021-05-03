@@ -6,17 +6,14 @@ var groupname ="Group 1H";
 function PeerreviewPage() {
     return (
         <div>
-            <h1 className="header">{groupname}</h1>
             <LogoUpper />
+            <center><h1 className="header">{groupname}</h1></center>
             <Menu />
             <Review />
             <Review />
             <Review />
             <Review />
             <Review />
-           
-
-         
         </div>
     )
 }

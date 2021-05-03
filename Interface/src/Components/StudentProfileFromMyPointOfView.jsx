@@ -1,8 +1,9 @@
 import React from "react";
 import LogoUpper from "./LogoUpper";
 import Menu from "./Menu";
-import {FiSend} from "react-icons/fi"
 import {TiEdit} from "react-icons/ti"
+import 'react-calendar/dist/Calendar.css';
+
 
 function StudentProfileFromMyPointOfView() {
     return (
@@ -24,7 +25,7 @@ function StudentProfileFromMyPointOfView() {
                 </tr>
             </table>
             <table className="comments-table profile-table-rows">
-                <tr><b>Average Grade:</b> 7.5/10</tr><br></br>
+                <tr className="average-grade"><b>Average Grade:</b> 7.5/10</tr><br></br>
                 <tr><b>COMMENTS</b></tr>
                 <tr><textarea rows="6" cols="70" ></textarea></tr>
             </table>
