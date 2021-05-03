@@ -26,7 +26,7 @@ function Announcement() {
         }
     }
     
-    if(whoseprofile !==1)
+    if(whoseprofile !== 1)
     return (
         <div className="announcement">
             <div className="top">

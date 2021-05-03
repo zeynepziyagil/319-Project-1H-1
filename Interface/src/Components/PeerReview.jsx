@@ -4,10 +4,10 @@ import {Link} from "react-router-dom";
 import PeerreviewPage from "./PeerreviewPage"
 import Popup from "reactjs-popup";
 
-var whoseprofile =2;
-var member1="veli";
-var member2="ali";
-var member3 ="deniz";
+var whoseprofile = 2;
+var member1 = "Yıldırım Demir";
+var member2 = "Ali Ayhan";
+var member3 = "Deniz Hayat";
 function PeerReview() {
 function ReviewOne(mem)
 {function add(){

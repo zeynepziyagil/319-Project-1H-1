@@ -2,12 +2,15 @@ import React from 'react'
 import Popup from "reactjs-popup";
 
 var upcoming = "Next Meeting 09/05"
+
 function MeetingsGroup() {
   function addx() {
-    return (<div>
-      <label>Enter date</label><br></br>
-      <input type="text" id="exp" /><br></br>
-    </div>);
+    return (
+      <div>
+        <center><label className="label-a">Enter date</label></center><br></br>
+        <input className="input-a" type="text" id="exp" /><br></br>
+      </div>
+    );
   }
 
   const contentStyle = {
@@ -17,8 +20,8 @@ function MeetingsGroup() {
 
   return (
     <div className="meeting">
-      <h2>Group Meetings</h2>
-      <h3>{upcoming}</h3>
+      <center><h2>Group Meetings</h2></center>
+      <center><h3>{upcoming}</h3></center>
       <h4>
         <Popup
           trigger={<button type="button">Create</button>}

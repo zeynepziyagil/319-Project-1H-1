@@ -177,11 +177,12 @@ td {
 .announcement {
     border-radius: 25px;
     position: relative;
-    left: 1200px;
+    left: 1350px;
     background-color: #f1e7e7;
     padding: 10px 30px;
-    height: 200px;
-    width: 200px;
+    height: 280px;
+    width: 220px;
+    bottom: 50px;
     text-align: left;
     box-shadow: 0 2px 5px rgb(49, 45, 45);
     overflow-y: scroll;
@@ -217,12 +218,12 @@ td {
 .poll {
     border-radius: 25px;
     position: relative;
-    bottom: 180px;
-    left: 40px;
+    bottom: 350px;
+    left: 100px;
     background-color: #f1e7e7;
     padding: 10px 30px;
-    height: 200px;
-    width: 200px;
+    height: 280px;
+    width: 240px;
     text-align: left;
     overflow-y: scroll;
     box-shadow: 0 2px 5px rgb(49, 45, 45);
@@ -231,12 +232,12 @@ td {
 .project-group {
     border-radius: 25px;
     position: relative;
-    bottom: 125px;
-    left: 40px;
+    bottom: 280px;
+    left: 100px;
     background-color: #f1e7e7;
     padding: 10px 30px;
-    height: 200px;
-    width: 200px;
+    height: 260px;
+    width: 240px;
     text-align: left;
     overflow-y: scroll;
     box-shadow: 0 2px 5px rgb(49, 45, 45);
@@ -245,12 +246,12 @@ td {
 .advertisement {
     border-radius: 25px;
     position: relative;
-    bottom: 400px;
-    left: 1200px;
+    bottom: 670px;
+    left: 1350px;
     background-color: #f1e7e7;
     padding: 10px 30px;
-    height: 200px;
-    width: 200px;
+    height: 280px;
+    width: 220px;
     text-align: left;
     overflow-y: scroll;
     box-shadow: 0 2px 5px rgb(49, 45, 45);
@@ -258,7 +259,7 @@ td {
 
 .give-ad-button {
     position: relative;
-    bottom: 1700px;
+    bottom: 1720px;
     left: 580px;
     background-color: #e19393;
     color: white;
@@ -270,6 +271,12 @@ td {
     font-size: 20px;
     display: flex;
     margin-bottom: 20px;
+}
+
+.header-group-page-other {
+    position: relative;
+    left: 700px;
+    bottom: 100px;
 }
 
 .table {
@@ -359,7 +366,7 @@ td {
     left: 40px;
     background-color: #dadadad3;
     padding: 10px 30px;
-    height: 300px;
+    height: 230px;
     width: 200px;
     text-align: left;
     overflow-y: scroll;
@@ -396,7 +403,7 @@ td {
     left: 40px;
     background-color: #dadadad3;
     padding: 10px 30px;
-    height: 250px;
+    height: 270px;
     width: 200px;
     text-align: left;
     overflow-y: scroll;
@@ -406,12 +413,12 @@ td {
 .choiceassi {
     border-radius: 25px;
     position: relative;
-    bottom: 830px;
-    left: 1380px;
+    bottom: 770px;
+    left: 1360px;
     background-color: #dadadad3;
     padding: 10px 30px;
-    height: 250px;
-    width: 200px;
+    height: 220px;
+    width: 240px;
     text-align: left;
     overflow-y: scroll;
     box-shadow: 0 2px 5px rgb(49, 45, 45);
@@ -441,7 +448,7 @@ td {
     left: 600px;
     background-color: #f5f1f1f1;
     padding: 10px 30px;
-    height: 400px;
+    height: 450px;
     width: 400px;
     margin: 10px;
     text-align: left;
@@ -823,19 +830,17 @@ buttonas {
 }
 
 .addann {
-    position: absolute;
-    margin: 13 px;
+    position: relative;
 }
 
 .reqbutton {
     position: relative;
-    left: -530px;
-    background-color: #612b2b;
+    right: 650px;
+    bottom: 250px;
+    background-color: #e19393;
     color: white;
     text-align: center;
-    position: relative;
-    width: 50%;
-    left: 60px;
+    width: 30%;
     height: 40px;
     border-radius: 20px;
 }
@@ -939,4 +944,22 @@ buttonas {
     display: flex;
     height: 30px;
     width: 60px;
+}
+
+.label-a {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.input-a {
+    height: 50px;
+}
+
+.assign-name {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.course-content {
+    font-size: 20px;
 }
