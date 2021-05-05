@@ -12,6 +12,7 @@ function SignUpForm2() {
     function showMessage(event) {
         axios.post("http://localhost:8080/sign-up/Instructor-TA", info).then(function(response){
             console.log(response);
+            sessionStorage.setItem('userMail', info.mail);
           });
     };
     return (
@@ -43,7 +44,7 @@ function SignUpForm2() {
                 <td><label for="instructor">Instructor</label><input onChange={handleChange} type="radio" name="user" id="role" value="instructor"/></td>
                 <td><label for="ta">Teaching Assistant</label><input onChange={handleChange} type="radio" name="user" id="role" value="teaching assistant"/></td>
                 </center>
-                <button onClick={showMessage} type="button"><Link to="Dashboard">Sign Up</Link></button>
+                <button onClick={showMessage} type="button"><Link to="">Sign Up</Link></button>
             </form>
         </div>
     );

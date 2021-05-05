@@ -19,6 +19,7 @@ function SignUpForm() {
         {*/
             axios.post("http://localhost:8080/sign-up/Student", info).then(function(response){
             console.log(response);
+            sessionStorage.setItem('userMail', info.mail);
           });
         //}
     }
@@ -56,7 +57,7 @@ function SignUpForm() {
                 <input onChange={handleChange} type="password" id="password" value={info.password}/><br></br>
                 <label>Confirm Password</label><br></br>
                 <input onChange={compare} type="password" id="confirmPassword" value={password2}/><br></br>
-                <button onClick={showMessage}type="button"><Link to="Dashboard">Sign Up</Link></button>
+                <button onClick={showMessage}type="button"><Link to="">Sign Up</Link></button>
             </form>
         </div>
     );

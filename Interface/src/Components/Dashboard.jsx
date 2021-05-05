@@ -16,28 +16,34 @@ function Dashboard() {
       }*/
 
     var emailUser = sessionStorage.getItem('userMail'); 
-    var whoseprofile = 2;
     const [userCourse, setUserCourse] = React.useState({})
     const [userGroup, setUserGroup] = React.useState({})
+    const [userRole, setUserRole] = React.useState({})
     const str = "http://localhost:8080/dashboard/" + emailUser;
     const str2 = "http://localhost:8080/dashboard/group/" + emailUser; 
+    const str3 = "http://localhost:8080/dashboard/enroll-role/" + emailUser;
+    console.log(userCourse);
+    console.log(emailUser);
     const fetchUserCourse = () => {
         axios.get(str).then(res => {
-            console.log(res);
+            console.log(res.data);
             setUserCourse(res.data);
         });
     };
     const fetchUserGroup = () => {
         axios.get(str2).then(response => {
-            console.log(response);
+            console.log(response.data);
             setUserGroup(response.data);
-            console.log(userGroup.maxMemberNum);
+        })
+    };
+    const fetchUserRole = () => {
+        axios.get(str3).then(response => {
+            console.log(response.data);
+            setUserRole(response.data);
         })
     };
     React.useEffect(() => {
         fetchUserCourse();
-    }, []);
-    React.useEffect(() => {
         fetchUserGroup();
     }, []);
     return (
@@ -46,9 +52,9 @@ function Dashboard() {
             <Menu /><br></br><br></br><br></br><br></br>
             <table>
                 <tr>
-                    <td><CourseCircle name={userCourse.name}/></td>
-                    <td>{whoseprofile === 0 || whoseprofile === 2 ? <ProjectGroupCircle name={userGroup.name}/> : null}</td>
-                    <td><AddSign/></td>
+                    <td>{userCourse.code != null ? <CourseCircle name={userCourse.name}/> : <label></label>}</td>
+                    <td>{userGroup.id != null ? <ProjectGroupCircle name={userGroup.name}/> : <label></label>}</td>
+                    <td>{userCourse.code == null ? <AddSign role={userRole.str}/>: <label></label>}</td>
                 </tr>
             </table>
         </div>

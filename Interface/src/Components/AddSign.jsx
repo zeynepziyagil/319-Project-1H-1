@@ -2,44 +2,54 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import Boxy from "./Boxy";
 import Popup from "reactjs-popup";
-
+import axios from "axios";
 import {AiOutlinePlusCircle} from "react-icons/ai";
 
 
 var whoseProfile = 1;
-
-
-function addCourse(){
-  return (
-    <div>
-      <label>CourseName</label><br></br>
-      <input type="text" id="CourseName"/><br></br>
-      <label>CourseCode</label><br></br>
-      <input type="text" id="CourseCode"/><br></br>
-      <label>CouseEnrollCode</label><br></br>
-      <input type="text" id="CouseEnrollCode"/><br></br>      
-   </div>
-   );
-}
-function enrollCourse(){
-  return (
-    <div>
-      <label>CourseCode</label><br></br>
-      <input type="text" id="CourseCode"/><br></br>
-      <label>CouseEnrollCode</label><br></br>
-      <input type="text" id="CouseEnrollCode"/><br></br>      
-    </div>)
-    ;
-}
 
 const contentStyle = {
   maxWidth: "600px",
   width: "90%"
 };
   
-  const AddSign = () => (
+  function AddSign(props) {
+    var emailUser = sessionStorage.getItem('userMail'); 
+    function enrollCourse(){
+      return (
+        <div>
+          <label>CouseEnrollCode</label><br></br>
+          <input onChange={handleChange} type="text" id="str"/><br></br>      
+        </div>)
+        ;
+    }
+    function addCourse(){
+      return (
+        <div>
+          <label>CourseName</label><br></br>
+          <input type="text" id="CourseName"/><br></br>
+          <label>CourseCode</label><br></br>
+          <input type="text" id="CourseCode"/><br></br>    
+       </div>
+       );
+    }
+
+    const [info,setInfo] = React.useState({str:""});
+    function handleChange(event) {
+        setInfo({ ...info, [event.target.id]: event.target.value });
+        console.log(info.str);
+    }
+    
+    function showMessage(event) {
+      
+        axios.post("http://localhost:8080/dashboard/enroll-course/" + emailUser,info).then(function(response){
+           sessionStorage.setItem('userMail', info.mail);
+            const sss = sessionStorage.getItem('userMail');
+        });
+    };
+    return (
     <Popup
-      trigger={<buttonas className="dashboardadd"><td><AiOutlinePlusCircle size="3em" /></td></buttonas>}
+      trigger={<button className="dashboardadd"><td><AiOutlinePlusCircle size="3em" /></td></button>}
       
       modal
       contentStyle={contentStyle}
@@ -50,27 +60,16 @@ const contentStyle = {
             &times;
           </a>
           <div className="content">
-            {whoseProfile=== 1 ? addCourse():enrollCourse()}
+            {props.role === "instructor" ? addCourse() : enrollCourse()}
           </div>
           <div className="actions">
-          <button
-              className="buttonxs"
-            >
-              done 
-            </button>
-            <button
-              className="buttonxs"
-              onClick={() => {
-                console.log("modal closed ");
-                close();
-              }}
-            >
-              close 
-            </button>
+          <button onClick={showMessage} type="button" className="buttonxs">Enroll</button>
+            <button className="buttonxs" onClick={() => { close();}}><Link to="Dashboard">Close</Link> </button>
           </div>
         </div>
       )}
     </Popup>
-  );
+    );
+  }
 
 export default Boxy(AddSign);

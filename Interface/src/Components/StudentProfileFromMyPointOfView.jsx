@@ -3,24 +3,46 @@ import LogoUpper from "./LogoUpper";
 import Menu from "./Menu";
 import {TiEdit} from "react-icons/ti"
 import 'react-calendar/dist/Calendar.css';
+import axios from "axios";
 
 
 function StudentProfileFromMyPointOfView() {
+    var emailUser = sessionStorage.getItem('userMail');
+    const [userProfile, setUserProfile] = React.useState({});
+    const [userGroup, setUserGroup] = React.useState({});
+    const str = "http://localhost:8080/profile/student/" + emailUser;
+    const str1 = "http://localhost:8080/dashboard/group/"+emailUser;
+    const fetchUserProfile = () => {
+        axios.get(str).then(response => {
+            setUserProfile(response.data);
+        })
+    };
+    const fetchUserGroup = () => {
+        axios.get(str1).then(response => {
+            setUserGroup(response.data);
+            console.log(response.data);
+        })
+    };
+    React.useEffect(() => {
+        fetchUserProfile();
+        fetchUserGroup();
+    }, []);
+    
     return (
         <div>
             <LogoUpper />
             <Menu />
             <table className="profile-table">
                 <tr>
-                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR2HDymu2u6Ds4U3-bioGXvnp-yHqz8bRehw&usqp=CAU"/></td>
+                    <td><img src=""/></td>
                     <td className="profile-table-rows">
-                        <tr><b>Name:</b> Bilgehan</tr>
-                        <tr><b>Surname:</b> Akcan</tr>
-                        <tr><b>Department:</b> CS</tr>
-                        <tr><b>Grade:</b> 3</tr>
-                        <tr><b>Email:</b> bbb@aaa.com</tr>
-                        <tr><b>Student ID:</b> 21802121</tr>
-                        <tr><b>Group Number:</b> 1-H</tr>
+                        <tr><b>Name:</b> {userProfile.name}</tr>
+                        <tr><b>Surname:</b> {userProfile.surname}</tr>
+                        <tr><b>Department:</b> {userProfile.department}</tr>
+                        <tr><b>Grade:</b> {userProfile.currentSemester}</tr>
+                        <tr><b>Email:</b> {userProfile.mail}</tr>
+                        <tr><b>Student ID:</b> {userProfile.studentId} </tr>
+                        <tr><b>Group Number:</b> {userGroup.name}</tr>
                     </td>
                 </tr>
             </table>

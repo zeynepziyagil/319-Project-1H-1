@@ -13,6 +13,7 @@ import AssignmentPage from "./AssignmentPage";
 import StudentProfileFromMyPointOfView from "./StudentProfileFromMyPointOfView";
 import InstructorProfile from "./InstructorProfile";
 import InstructorProfileFromMyPointOfView from "./InstructorProfileFromMyPointOfView";
+import TeachingAssistantProfileFromMyPointOfView from "./TeachingAssistantProfileFromMyPointOfView";
 import axios from "axios";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route exact path="/StudentProfileMyView" component={StudentProfileFromMyPointOfView} />
             <Route exact path="/InstructorProfile" component={InstructorProfile} />
             <Route exact path="/InstructorProfileMyView" component={InstructorProfileFromMyPointOfView} />
+            <Route exact path="/TeachingAssistantProfileMyView" component={TeachingAssistantProfileFromMyPointOfView} />
         </div>
     );
 }

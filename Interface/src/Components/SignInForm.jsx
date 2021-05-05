@@ -9,11 +9,13 @@ function SignInForm() {
         setInfo({ ...info, [event.target.id]: event.target.value });
     }
     
-    function showMessage() {
-        axios.post("http://localhost:8080/sign-in", info).then(function(response){
-            console.log(response);
+    function showMessage(event) {
+        console.log(info.mail);
+        axios.post("http://localhost:8080/sign-in",info).then(function(response){
+            console.log(response.data);
             sessionStorage.setItem('userMail', info.mail);
             const sss = sessionStorage.getItem('userMail');
+            console.log(info.mail);
             console.log(sss);
         });
     };
